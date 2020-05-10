@@ -1,0 +1,540 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Modak', cursive;
+}
+
+.fa, .fas, .fab,.far {
+    font-family: FontAwesome !important;
+    font-style: normal;
+}
+
+.header {
+    width: 100%;
+    height: 155px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: #FFD29A;
+}
+
+.jsDiv {
+   font-size: 28px;
+   user-select: none;
+}
+
+.jsDiv strong {
+    font-size: 38px;
+    color: #01A1B9;
+    user-select: none;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu div {
+    margin-left: 30px;
+    font-size: 26px;
+    color: #01A1B9;
+    user-select: none;
+    border-bottom: 2px solid #FFD29A;
+    transition: 0.5s;
+}
+
+.menu div:hover {
+   border-bottom: 2px solid black;
+   
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content .rightDiv {
+    margin-top: 200px;
+    padding: 50px;
+}
+
+.content .rightDiv p {
+    font-size: 25px;
+    margin-top: 30px;
+    user-select: none;
+    
+}
+
+.content .rightDiv h1 {
+    margin-top: 30px;
+    color: #01A1B9;
+    user-select: none;
+}
+
+.content .rightDiv strong {
+    color: #01A1B9;
+    font-size: 40px;
+}
+
+.developerDiv {
+    background-image: url('./img/gifdevel.gif');
+    background-size: cover;
+    width: 700px;
+    height: 600px;
+}
+
+#clock {
+    width: 100px;
+    height: 100px;
+    background-color: #FFD29A;
+    color: #01A1B9;
+    border-radius: 100%;
+    border: 0.5px solid #01A1B9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 28px;
+    margin-top: 40px;
+    margin-left: 47%;
+    opacity: 0;
+    user-select: none;
+}
+
+.btnsDiv {
+    position: relative;
+}
+
+.btn {
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 26px;
+    margin-top: 30px;
+    background-color: #01A1B9;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.1s;
+   
+}
+
+.btn:hover {
+    border: 1px solid #01A1B9;
+    background-color: white;
+    color: #01A1B9;
+}
+
+.btnDivOpen {
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #01A1B9;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 1px;
+    padding-top: 20px;
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    align-items: center; 
+    transition: 0.4s;
+}
+
+.btnDivOpen:hover {
+    border: 1px solid #01A1B9;
+    background-color: white;
+    color: #01A1B9;
+    
+}
+
+#answerDiv {
+    max-width: 1035px;
+    height: 410px;
+    background-color: #01A1B9;
+    margin-left: 390px;
+    margin-top: 100px;
+    display: none;  
+}
+
+#answerDiv_loop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.answer {
+    width: 175px;
+    height: 90px;
+    background-color: #FFD29A;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin-left: 40px;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.answer:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.bigAnswer {
+    width: 580px;
+    height: 90px;
+    background-color: #FFD29A;
+    border: 1px solid black;
+    font-size: 20px;
+    border-radius: 6px;
+    margin-left: 225px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center; 
+    user-select: none;
+}
+
+.cencelDiv {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    font-size: 22px;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.questionDiv {
+    max-width:700px;
+    min-height: 70px;
+    margin-left:30%;
+    margin-top: 40px;
+    padding: 15px;
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 22px;
+    color: white;
+    background-color: #01A1B9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+#openDiv {
+      width:100%;
+      background-color: #FFD29A;
+  }
+
+.footer {
+    width: 100%;
+    margin-top: 100px;
+    height: 140px;
+    background-color:#FFD29A;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.iconDiv {
+    display: flex;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: #01A1B9;
+    color: rgb(207, 204, 37);
+    font-size: 20px;
+    border-radius: 6px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+
+.icon:hover {
+    background-color:rgb(207, 204, 37);
+    color: #01A1B9;
+    transform: rotate(360deg);
+}
+
+.info {
+    user-select: none;
+    font-size: 20px;
+}
+.info strong {
+    color: #01A1B9;
+}
+
+.link {
+    text-decoration: none;
+    color: #01A1B9;
+}
+
+.linkEfect {
+    text-decoration: none;
+    color: #000;
+}
+
+.linkEfect:active {
+    border-bottom: 1px solid black;
+} 
+
+.text {
+    max-width: 952px;
+    margin-top: 30px;
+
+}
+
+.textDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title {
+    margin-top: 20px;
+    color: #01A1B9;
+}
+
+.teamImgDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.imgOpenDiv {
+    width: 0px;
+    height: 330px;
+    transition: 1s;
+}
+
+.teamimg {
+    background-image: url('./img/Become-a-Full-Stack-Developers.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 430px;
+    height: 330px;
+    margin-left: 46px;
+    margin-top: 40px;
+    
+}
+
+.teamimg:hover .imgOpenDiv {
+    width: 430px;
+    background-color: rgb(236, 180, 115);
+    opacity: 0.5;
+
+}
+
+.teamimg1 {
+    background-image: url('./img/developer.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 430px;
+    height: 330px;
+    margin-left: 46px;
+    margin-top: 40px;
+  
+}
+
+.teamimg1:hover .imgOpenDiv {
+    width: 430px;
+    background-color: rgb(236, 180, 115);
+    opacity: 0.5;
+
+}
+
+.teamimg2 {
+    background-image: url('./img/female-web-developer-illustration-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 430px;
+    height: 330px;
+    margin-left: 46px;
+    margin-top: 40px;
+  
+}
+
+.teamimg2:hover .imgOpenDiv {
+    width: 430px;
+    background-color: rgb(236, 180, 115);
+    opacity: 0.5;
+
+}
+.teamimg3 {
+    background-image: url('./img/freelance-web-developer-at-work-696x464.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 430px;
+    height: 330px;
+    margin-left: 46px;
+    margin-top: 40px;
+  
+}
+
+.teamimg3:hover .imgOpenDiv {
+    width: 430px;
+    background-color: rgb(236, 180, 115);
+    opacity: 0.5;
+}
+
+.teamimg4 {
+    background-image: url('./img/programer.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 430px;
+    height: 330px;
+    margin-left: 46px;
+    margin-top: 40px;
+  
+}
+
+.teamimg4:hover .imgOpenDiv {
+    width: 430px;
+    background-color: rgb(236, 180, 115);
+    opacity: 0.5;
+}
+
+.teamimg5 {
+    background-image: url('./img/software-developer.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 430px;
+    height: 330px;
+    margin-left: 46px;
+    margin-top: 40px;
+}
+
+.teamimg5:hover .imgOpenDiv {
+    width: 430px;
+    background-color: rgb(236, 180, 115);
+    opacity: 0.5;
+    
+}
+
+
+.baddeveloper {
+    width: 845px;
+    height: 680px;
+    background-image: url('./img/bad.jpg');
+    background-size: cover;
+}
+
+#badDeveloperOpen {
+    display: none;
+    margin-top: 50px;
+    margin-left: 25%;
+}
+
+.normaldeveloper {
+    width: 790px;
+    height: 660px;
+    background-image: url('./img/normal.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#normalDeveloperOpen {
+    display: none;
+    margin-top: 50px;
+    margin-left: 25%;
+}
+
+.gooddeveloper {
+    width: 790px;
+    height: 660px;
+    background-image: url('./img/good.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#goodDeveloperOpen {
+    margin-top: 50px;
+    margin-left: 25%;
+    display: none;
+}
+
+.testdiv {
+    color: #01A1B9;
+    font-size: 22px;
+    user-select: none;
+}
+.toFinish {
+    width: 220px;
+    height: 80px;
+    background-color: #FFD29A;
+    color: #01A1B9;
+    border-radius: 10%;
+    border: 0.5px solid #01A1B9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 28px;
+    margin-top: 40px;
+    margin-left: 44%;
+    opacity: 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+
+
+@media(max-width:600px) {
+    .bigAnswer {
+        width: 480px;
+        height: 100px;
+        margin-left: 0px;
+    }
+    #answerDiv {
+        max-width: 663px;
+        height: 600px;
+        margin-left: 0px;
+    }
+
+    .developerDiv {
+        width: 600px;
+        height: 500px;
+    }
+
+    .questionDiv {
+        margin-left: 0%;
+    }
+
+    .toFinish {
+        margin-left: 30%;
+    }
+}
