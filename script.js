@@ -18,7 +18,6 @@ const rightNewAnswer = [];
 const allAnswer = [];
 
 
-
 const rightAnswer = [
   '1. տիպիզացված և դինամիկ',
   '3. LiveScript',
@@ -109,26 +108,13 @@ btn_id.addEventListener('click', (event) => {
 
 openDiv.addEventListener('click', function(event) {
   if(event.target.className === "questionDiv") {
-    if(arrayQuestion.innerHTML !== '') {
-      answerDiv_loop.append(...getListContentTwo(event.target.id));
-      bigAnswer_id.innerHTML = event.target.innerHTML;
-      answerDiv.style.display = 'block';
-      openDiv.style.display = 'none';  
-      footer_id.style.backgroundColor = '#FFD29A'; 
-      armenia.style.color = '#01A1B9'; 
-      jsDiv_id.style.color = '#01A1B9';
-    }
-  }
-});
-
-cencelDivId.addEventListener('click', function(event) {
-  if (event.target.innerHTML === 'x') {
-    footer_id.style.backgroundColor = '#01A1B9';
-    armenia.style.color = 'rgb(207, 204, 37)';
-    jsDiv_id.style.color = 'rgb(207, 204, 37)';
-    answerDiv.style.display = 'none';
-    openDiv.style.display = 'block';
-    answerDiv_loop.innerHTML = '';
+    answerDiv_loop.append(...getListContentTwo(event.target.id));
+    bigAnswer_id.innerHTML = event.target.innerHTML;
+    answerDiv.style.display = 'block';
+    openDiv.style.display = 'none';  
+    footer_id.style.backgroundColor = '#FFD29A'; 
+    armenia.style.color = '#01A1B9'; 
+    jsDiv_id.style.color = '#01A1B9';
   }
 });
 
